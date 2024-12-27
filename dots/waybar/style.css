@@ -45,14 +45,14 @@
 
 *{
     font-family: FontAwesome, Jetbrains Mono Nert;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 window#waybar {
     background-color: @background;
     color: @foreground;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
     border-color: @hard_background;
 }
 
@@ -63,24 +63,24 @@ window#waybar {
  *-------------------------------------------------------------------------------*/
 
 .modules-right {
-    border-top: 2px solid;
-    border-right: 2px solid;
-    border-bottom: 2px solid;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
     border-color: @hard_background;
 
 }
 
 .modules-center {
-    border-top: 2px solid;
-    border-bottom: 2px solid;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
     border-color: @hard_background;
 }
 
 .modules-left {
     background-color: @background;
-    border-top: 2px solid;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
+    border-top: 3px solid;
+    border-left: 3px solid;
+    border-bottom: 3px solid;
     border-color: @hard_background;
 }
 
@@ -97,6 +97,7 @@ window#waybar {
 }
 #workspaces button {
     color: @foreground;
+    padding: 0 1px;
 }
 #workspaces button:hover {
     background-color: @color_aqua;

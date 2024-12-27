@@ -26,11 +26,11 @@
 
     "layer": "top", 
     "position": "top",
-    "height": 30,
+    "height": 40,
     "spacing": 0,
-    "margin-top": 5,
+    "margin-top": 7,
     "margin-left": 50,
-    "margin-bottom": 5,
+    "margin-bottom": 1,
     "margin-right": 50,
 
 
@@ -82,7 +82,7 @@
         "warp-on-scroll": false,
         "format": "{icon}",
         "format-icons": {
-            "1": "計",     //calculate
+            "1": "計",     //calculate :3
             "2": "二",
             "3": "三", 
             "4": "四", 
@@ -95,7 +95,8 @@
     },
 
     "clock": {
-        "format": "{:%d-%m-%Y  | %I:%M}"
+        "format": "{:%d-%m-%Y  | %I:%M}",
+	"tooltip-format": "{:%A}"
     },
 
 
@@ -141,14 +142,13 @@
     "network": {
         "format-wifi": "",
         "format-disconnected": "⚠",
-        "on-click-right": "kitty nmtui"
+        "on-click-right": "kitty nmtui",
+	"tooltip-format": "{essid}"
     },
 
     "pulseaudio": {
         "format": "{volume} {icon}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-muted": "  ", 
         "format-icons": {
             "default": [" ", " ", " "]
         },
@@ -161,7 +161,7 @@
 	"format": " {}   ",  
 	"return-type": "json",  
 	"on-click": "playerctl --player=spotify play-pause",  
-	"on-scroll-up": "playerctl --player=spotify next",  
-	"on-scroll-down": "playerctl --player=spotify previous"  
+	"on-double-click": "playerctl --player=spotify next",  
+	"on-double-click-right": "playerctl --player=spotify previous"  
     }
 }
