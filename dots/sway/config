@@ -30,6 +30,9 @@ set $network kitty nmtui
 set $menu rofi -show drun -theme ~/.config/rofi/config.rasi
 set $powermenu zsh -c '~/.config/rofi/powermenu/powermenu.sh'
 
+#fetch
+set $fetch kitty --hold -e fastfetch
+
 
 
 
@@ -58,6 +61,7 @@ bindsym $mod+v floating toggle
 # Menus
 bindsym $mod+Space exec $menu    
 bindsym $mod+Backspace exec $powermenu
+bindsym $mod+i exec $fetch
 
 # Move focus around
 bindsym $mod+Left focus left
